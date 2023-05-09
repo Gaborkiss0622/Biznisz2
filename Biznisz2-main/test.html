@@ -6,63 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
 <!-- Latest jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <style>/* Navbar */
-        .navbar {
-          margin-bottom: 0;
-          background: rgba(63, 62, 63, 0.5);
-          border: none;
-        }
-        
-        .navbar-brand {
-          font-weight: bold;
-          font-size: 2em;
-          padding-left: 1em;
-        }
-        
-        .navbar-brand:hover,
-        .navbar-brand:focus {
-          text-decoration: none;
-        }
-        
-        .navbar-nav > li > a {
-          font-size: 1.2em;
-          padding: 1em;
-          line-height: 2em;
-          color: #fff;
-        }
-        
-        .navbar-nav > li > a:hover,
-        .navbar-nav > li > a:focus {
-          background-color: #2c3e50;
-        }
-        
-        .navbar-nav > .active > a,
-        .navbar-nav > .active > a:hover,
-        .navbar-nav > .active > a:focus {
-          color: #fff;
-          background-color: #2c3e50;
-        }
-        
-        @media (max-width: 768px) {
-          .navbar-nav > li > a {
-            color: #fff;
-          }
-        }
-        
-        .navbar-nav > li.active > a,
+    <style>
+      /* Navbar */
+.navbar {
+    margin-bottom: 0;
+    background: rgba(63, 62, 63, 0.5);
+    border: none;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 1em;
+  }
+  
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    text-decoration: none;
+  }
+  
+  .navbar-nav > li > a {
+    font-size: 1.2em;
+    padding: 1em;
+    line-height: 2em;
+    color: #fff;
+  }
+  
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus {
+    background-color: #2c3e50;
+  }
+  
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #2c3e50;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav > li > a {
+      color: #fff;
+    }
+  }
+  
+  .navbar-nav > li.active > a,
 .navbar-nav > li.active > a:hover,
 .navbar-nav > li.active > a:focus {
-  color:#2c3e50;
+color:#2c3e50;
 }
 
-
-        </style>
+</style>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top transparent">
@@ -86,19 +90,23 @@
   </div>
 </nav>
 
-      <script>$(window).on('scroll', function() {
-        $('section[id]').each(function() {
-          var $section = $(this);
-          var id = $section.attr('id');
-          var $navItem = $('[data-nav="' + id + '"]');
-          var offset = $section.offset().top - $(window).scrollTop();
-          if (offset <= 0) {
-            $navItem.addClass('active');
-          } else {
-            $navItem.removeClass('active');
-          }
-        });
-      });
+      <script>
+      
+      $(window).on('scroll', function() {
+  var currentPos = $(this).scrollTop();
+  $('section[id]').each(function() {
+    var top = $(this).offset().top;
+    var bottom = top + $(this).outerHeight();
+    var id = $(this).attr('id');
+    var $navItem = $('[data-nav="' + id + '"]');
+    if (currentPos >= top && currentPos <= bottom) {
+      $navItem.addClass('active');
+    } else {
+      $navItem.removeClass('active');
+    }
+  });
+});
+
       </script>
 </body>
 </html>
