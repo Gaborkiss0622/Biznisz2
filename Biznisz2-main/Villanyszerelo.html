@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://www.w3schools.com/lib/w3.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./villany.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+
+  <nav class="nav affix">
+    <div class="container">
+      <div class="logo">
+        <a href="#">Villanyszerelő</a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li data-nav="about"><a href="#about">About</a></li>
+          <li data-nav="portfolio"><a href="#portfolio">Portfolio</a></li>
+          <li data-nav="services"><a href="#services">Services</a></li>
+          <li data-nav="contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+  </nav>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-opacity w3-display-container">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+
+
+
+    </div>
+  </div>
+  
+  <section id="about">
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <h2 class="w3-center">ABOUT ME</h2>
+      <p class="w3-center"><em>I love Programming</em></p>
+      <p>I am Christian Pecson. I am a dreamer whose dream is to build awesome things in the future and to contribute
+        something useful to the world.But hey this website symbolizes that I contribute something in the world.</p>
+        <div class="container1">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="elec3.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="electrician.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="elec3.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="elec3.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="elec3.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="elec2.jpg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="elec2.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="elec3.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="elec2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="elec2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="elec3.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="elec2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+            
+          </div>
+        </div>
+        
+      <!--  Profile Picture and Description  -->
+
+      <div class="w3-row">
+
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-section">
+          
+          <p>By the help of FreeCodeCamp I will be a Full Stack Web Developer soon!</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <h2 class="w3-center">MY WORK</h2>
+      <p class="w3-center"><em>Here are some of my latest lorem work.<br> Click on the images to make them bigger</em>
+      </p><br>
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="https://unsplash.it/400/300?random" style="width:100%" onclick="onClick(this)"
+            class="w3-hover-opacity">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="https://unsplash.it/400/301?random" style="width:100%" onclick="onClick(this)"
+            class="w3-hover-opacity">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="https://unsplash.it/400/302?random" style="width:100%" onclick="onClick(this)"
+            class="w3-hover-opacity">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="https://unsplash.it/400/303?random" style="width:100%" onclick="onClick(this)"
+            class="w3-hover-opacity">
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+          <img src="https://unsplash.it/400/304?random" style="width:100%" onclick="onClick(this)"
+            class="w3-hover-opacity">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="https://unsplash.it/400/305?random" style="width:100%" onclick="onClick(this)"
+            class="w3-hover-opacity">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="https://unsplash.it/400/306?random" style="width:100%" onclick="onClick(this)"
+            class="w3-hover-opacity">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="https://unsplash.it/400/307?random" style="width:100%" onclick="onClick(this)"
+            class="w3-hover-opacity">
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" style="max-width:100%">
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container">
+      <div class="w3-display-middle">
+        <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <h3 class="w3-center">WHERE I WORK</h3>
+      <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+      <address class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <!-- Add Google Maps -->
+          <div id="googleMap" class="w3-round-large"></div>
+        </div>
+        <div class="w3-col m8 w3-container w3-section">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Kabankalan City, NIR,
+            Philippines<br>
+            <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +639 0744 38325<br>
+            <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email:
+            christianpecson.io@gmail.com<br>
+          </div>
+          <p>Swing by for a cup of coffee, or leave me a note:</p>
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+          <a href="mailto:christianpecson.io@gmail.com" class="w3-btn w3-section w3-right">SEND</a>
+        </div>
+      </address>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
+
+  </footer>
+  <!-- partial -->
+  <script src='https://maps.googleapis.com/maps/api/js'></script>
+  <!-- Latest jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="./villany.js"></script>
+  <script>
+
+    $(window)
+
+    $('.navTrigger').click(function () {
+      $(this).toggleClass('active');
+      $("#mainListDiv").toggleClass("show_list");
+      $("#mainListDiv").fadeIn();
+
+    });
+    $('.navlinks li a').on('click', function () {
+      $('.navTrigger').removeClass('active');
+      $('#mainListDiv').removeClass('show_list');
+    });
+
+    $(window).on('scroll', function () {
+      var currentPos = $(this).scrollTop();
+      $('section[id]').each(function () {
+        var top = $(this).offset().top;
+        var bottom = top + $(this).outerHeight();
+        var id = $(this).attr('id');
+        var $navItem = $('[data-nav="' + id + '"]');
+        if (currentPos >= top && currentPos <= bottom) {
+          $navItem.addClass('active');
+        } else {
+          $navItem.removeClass('active');
+        }
+      });
+    });
+   /*Slider*/
+   let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active1", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active1";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+</body>
+
+</html>
