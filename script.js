@@ -40,7 +40,7 @@ window.addEventListener('load', function() {
   function resizeHandler() {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(function() {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1200) {
         left.addEventListener('mouseenter', leftEnter);
         left.addEventListener('mouseleave', leftLeave);
         right.addEventListener('mouseenter', rightEnter);
@@ -57,5 +57,7 @@ window.addEventListener('load', function() {
   }
   
   resizeHandler();
-  window.addEventListener('resize', resizeHandler);
+  window.addEventListener('resize', resizeHandler);  
+
 });
+
